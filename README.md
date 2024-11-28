@@ -66,13 +66,13 @@ from PIL import Image
 # model_path = "U4R/Chimera-Reasoner-4B"
 model_path = "U4R/Chimera-Reasoner-8B"
 generation_config = dict(max_new_tokens=256, do_sample=False)
-model = solva4easyuse(model_path, dtype = torch.bfloat16, generation_config= generation_config)
+model = Chimera4easyuse(model_path, dtype = torch.bfloat16, generation_config= generation_config)
 
 # prepare input
 image_path = "path/to/image"
 user_prompt = "<image>\nuser prompt"
-input_image = Image.open(image_file).convert('RGB')
-response = model.get_response(user_prompt, [image])
+input_image = Image.open(image_path).convert('RGB')
+response = model.get_response(user_prompt, [input_image])
 print(response)
 ```
 
@@ -85,12 +85,12 @@ from PIL import Image
 # prepare model
 model_path = "U4R/Chimera-Extractor-1B"
 generation_config = dict(max_new_tokens=4096, do_sample=False, no_repeat_ngram_size = 20)
-model = solva4easyuse(model_path, dtype = torch.float16, generation_config= generation_config)
+model = Chimera4easyuse(model_path, dtype = torch.float16, generation_config= generation_config)
 
 # prepare input
 image_path = "path/to/document"
 user_prompt = "<image>\nAs a smart PDF to Markdown conversion tool, please convert the content of the provided PDF into Markdown format."
-input_image = Image.open(image_file).convert('RGB')
-response = model.get_response(user_prompt, [image])
+input_image = Image.open(image_path).convert('RGB')
+response = model.get_response(user_prompt, [input_image])
 print(response)
 ```
