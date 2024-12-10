@@ -2,7 +2,7 @@
 <h1>Chimera: Improving Generalist Model with Domain-Specific Experts</h1>
 
 
-[[ Paper ]]() [[ Website ]]() [[ Dataset🤗 ]]() [[ Models🤗 ]](https://huggingface.co/collections/U4R/chimera-10-6749542e2f0dfa09414232c0) 
+[[ Paper ]](https://arxiv.org/abs/2412.05983) [[ Website ]](https://unimodal4reasoning.github.io/chimera_page/) [[ Dataset🤗 ]]() [[ Models🤗 ]](https://huggingface.co/collections/U4R/chimera-10-6749542e2f0dfa09414232c0) 
 
 </div>
 
