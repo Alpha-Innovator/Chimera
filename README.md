@@ -105,7 +105,14 @@ Chimera is released under the [Apache License 2.0](LICENSE)
 ## Citation
 If you find our models / code / papers useful in your research, please consider giving ⭐ and citations 📝, thx :)  
 ```bibtex
-@article{}
+@misc{peng2024chimeraimprovinggeneralistmodel,
+      title={Chimera: Improving Generalist Model with Domain-Specific Experts}, 
+      author={Tianshuo Peng and Mingsheng Li and Hongbin Zhou and Renqiu Xia and Renrui Zhang and Lei Bai and Song Mao and Bin Wang and Conghui He and Aojun Zhou and Botian Shi and Tao Chen and Bo Zhang and Xiangyu Yue},
+      year={2024},
+      eprint={2412.05983},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2412.05983}, 
 }
 ```
 
