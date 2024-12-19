@@ -1,11 +1,14 @@
-# Chimera
-### Repo of *Chimera: Improving Generalist Model with Domain-Specific Experts*
+<div align="center">
+<h1>Chimera: Improving Generalist Model with<br>Domain-Specific Experts</h1>
 
 
+[[ Paper ]](https://arxiv.org/abs/2412.05983) [[ Website ]](https://unimodal4reasoning.github.io/chimera_page/) [[ Dataset🤗 ]]() [[ Models🤗 ]](https://huggingface.co/collections/U4R/chimera-10-6749542e2f0dfa09414232c0) 
+
+</div>
+
+## News :fire:
 - [x] Release the inference code and model checkpoints
 - [ ] Release the training code and data recipe
-
-
 
 ## 🛠️ Installation
 
@@ -94,3 +97,24 @@ input_image = Image.open(image_path).convert('RGB')
 response = model.get_response(user_prompt, [input_image])
 print(response)
 ```
+
+
+## License
+Chimera is released under the [Apache License 2.0](LICENSE)
+
+## Citation
+If you find our models / code / papers useful in your research, please consider giving ⭐ and citations 📝, thx :)  
+```bibtex
+@misc{peng2024chimeraimprovinggeneralistmodel,
+      title={Chimera: Improving Generalist Model with Domain-Specific Experts}, 
+      author={Tianshuo Peng and Mingsheng Li and Hongbin Zhou and Renqiu Xia and Renrui Zhang and Lei Bai and Song Mao and Bin Wang and Conghui He and Aojun Zhou and Botian Shi and Tao Chen and Bo Zhang and Xiangyu Yue},
+      year={2024},
+      eprint={2412.05983},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2412.05983}, 
+}
+```
+
+## Contact Us
+If you encounter any issues or have questions, please feel free to contact us via bo.zhangzx@gmail.com or zhangbo@pjlab.org.cn.
