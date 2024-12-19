@@ -4,6 +4,7 @@ from chimera.model.kosmos2_5 import Kosmos2_5ImageProcessor
 from chimera.model.got import GOTImageProcessor
 from transformers import  CLIPImageProcessor
 from transformers import Pix2StructImageProcessor
+from chimera.model.chimera import InternViTImageProcessor
 import copy
 import pdb
 
@@ -29,6 +30,15 @@ def init_processor_from_meta_config(meta):
         # 由于CLIP系列的processor中缺少max_patch这一参数，在此手动补全，根据具体使用的CLIP进行更改
         processor.max_patches = 576
         return processor
+
+    elif meta['image_processor_type'] == "InternViTImageProcessor":
+        # processor = InternViTImageProcessor.from_pretrained(meta['model_name_or_path'])
+        processor =  InternViTImageProcessor(**meta)
+        processor.max_patches = 1024
+
+        return processor
+    
+
     else:
         raise NotImplementedError(f'{meta["image_processor_type"]} is not implemented.')
 

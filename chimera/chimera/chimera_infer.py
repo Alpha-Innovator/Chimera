@@ -98,7 +98,7 @@ def expert_preprocess(images, expert_processor_list):
         if processor.image_processor_type in ("Kosmos2_5ImageProcessor", "Pix2StructImageProcessor"):
             expert_encoder_pixel_value_list.append(output.flattened_patches)
             expert_encoder_attention_mask_list.append(output.attention_mask)
-        elif processor.image_processor_type in ("CLIPImageProcessor", "GOTImageProcessor"):
+        elif processor.image_processor_type in ("CLIPImageProcessor", "GOTImageProcessor", "InternViTImageProcessor"):
             expert_encoder_pixel_value_list.append(output.pixel_values)
             expert_encoder_attention_mask_list.append(None)
     
