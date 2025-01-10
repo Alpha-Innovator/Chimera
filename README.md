@@ -7,7 +7,7 @@
 </div>
 
 ## News :fire:
-- [ ] :fire: :fire: We are developing the Chimera-enhanced version to achieve superior multimodal reasoning by integrating stronger expert models, effective general models, and optimized fusion strategies.
+- [ ] :fire: :fire: We are developing the Chimera-enhanced version to achieve superior multimodal reasoning by integrating stronger expert models, effective general models, and optimized fusion strategies
 - [ ] Release the training code and data recipe
 - [x] Release the inference code and model checkpoints
 
